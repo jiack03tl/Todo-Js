@@ -1,0 +1,129 @@
+body {
+  font-family: "Roboto";
+  font-size: 0.8125rem;
+  margin: 0;
+  background-color: #5b5e6d;
+}
+.page_wrap {
+  margin-top: 8.5rem !important;
+  margin: 0 auto;
+}
+/* ------section header css------ */
+
+input,
+textarea {
+  padding: 0;
+  outline: none;
+}
+.add_btn {
+  border: none;
+  background: linear-gradient(
+      0deg,
+      rgba(68, 226, 40, 0.5),
+      rgba(68, 226, 40, 0.5)
+    ),
+    #d9d9d9;
+  border-radius: 0.5rem;
+}
+
+.add_todo {
+  resize: none;
+}
+
+.add_date,
+.add_todo {
+  border-radius: 1.25rem;
+  border: 1px solid gray;
+}
+.add_date {
+  padding: 0 0.5rem 0;
+}
+.add_date,
+.add_btn,
+.add_todo {
+  height: 2.25rem;
+  width: 100%;
+  max-width: 6.25rem;
+}
+.add_todo {
+  min-width: 22.5rem;
+  height: 2.25rem;
+  padding: 0 0 0 0.5rem;
+  place-content: center;
+}
+/* ------section header css------ */
+.todo_wrap {
+  overflow: hidden;
+  width: 18.0625rem;
+  height: 13.125rem;
+  border-radius: 0.2rem;
+  border: -3px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px -5px;
+}
+.todo_wrap:nth-child(4n + 1) {
+  background-color: #ffe279;
+}
+
+.todo_wrap:nth-child(4n + 2) {
+  background-color: #ff72ad;
+}
+
+.todo_wrap:nth-child(4n + 3) {
+  background-color: #64c5ff;
+}
+
+.todo_wrap:nth-child(4n + 4) {
+  background-color: #3beaab;
+}
+.todo_date {
+  align-content: center;
+  padding: 0 1rem;
+  max-width: 100%;
+  height: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.todo_content {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1rem;
+}
+.todo_main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+.todo_body {
+  margin-top: 2rem;
+}
+
+.todo_head {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+@media (max-width: 487px) {
+  .add_date,
+  .add_btn,
+  .add_todo {
+    min-width: auto;
+  }
+
+  .add_todo {
+    width: 100%;
+    max-width: 100%;
+  }
+  .add_btn {
+    order: 2;
+  }
+  .add_date {
+    order: 1;
+  }
+  .page_wrap {
+    padding: 0 1rem 2rem;
+  }
+}
