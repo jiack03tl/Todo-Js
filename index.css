@@ -145,7 +145,10 @@ footer a {
   .add_todo {
     min-width: auto;
   }
-
+  span.mentor {
+    display: -webkit-inline-box;
+    padding-top: 1rem;
+  }
   .add_todo {
     width: 100%;
     max-width: 100%;
